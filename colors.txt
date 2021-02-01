@@ -1,0 +1,6 @@
+green-#a2cf8d
+red-#6d1010
+blue-#6aa5b8
+brown-#53472d
+dark-#202628
+darkgreen-#5c9d7d
