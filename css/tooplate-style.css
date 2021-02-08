@@ -14,9 +14,9 @@ p {
 }
 .primary-button a {
   display: inline-block;
-  background-color: #6d1010;
+  background-color: #202628;
+	color: #5c9d7d;
   padding: 12px 18px;
-  color: #fff;
   font-size: 11px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -26,8 +26,7 @@ p {
   transition: all 0.5s;
 }
 .primary-button a:hover {
-	background-color: #202628;
-	color: #5c9d7d;
+	color: #ffffff;
 }
 
 .green-button a {
@@ -44,7 +43,6 @@ p {
   transition: all 0.5s;
 }
 .green-button a:hover {
-  background-color: #202628;
   color: #fff;
 }
 .white-button a {
@@ -63,22 +61,7 @@ p {
   background-color: #121212;
   color: #e6e6e6;
 }
-.blue-button a {
-  display: inline-block;
-  background-color: #6aa5b8;
-  padding: 12px 18px;
-  color: #121212;
-  font-size: 11px;
-  font-weight: 500;
-  text-transform: uppercase;
-  text-decoration: none;
-  border-radius: 20px;
-  transition: all 0.5s;
-}
-.blue-button a:hover {
-  background-color: #e6e6e6;
-  color: #000;
-}
+
 .section-heading h4 {
   text-align: center;
   font-size: 17px;
@@ -149,14 +132,14 @@ p {
 .navbar-brand .logo img{
   margin-left: -100px;
   display: inline-block;
-  width: 90%;
+  width: 50%;
   height: 100%;
   background-repeat: no-repeat;
 }
 .header.active .navbar-brand .logo img{
   margin-left: -100px;
   display: inline-block;
-  width: 90%;
+  width: 50%;
   height: 100%;
   background-repeat: no-repeat;
 }
@@ -180,12 +163,12 @@ p {
 }
 .navbar-inverse .navbar-toggle {
   margin-top: 22px;
-  border-color: #a2cf8d;
-  background-color: #a2cf8d;
+  border-color: #5c9d7d;
+  background-color: #5c9d7d;
 }
 .navbar-inverse .navbar-toggle:hover,
 .navbar-inverse .navbar-toggle:focus {
-  background-color: #a2cf8d;
+  background-color: #5c9d7d;
 }
 bootstrap.min.css: 5 .navbar-toggle {
   position: relative;
@@ -267,11 +250,15 @@ ul.cd-hero-slider {
   padding-right: 5px;
 }
 
+#about .right-image img{
+  height: 50%;
+  width: 85%;
+}
 /* skills/services */
 
 .service-item {
   cursor: pointer;
-  background-color: rgb(255, 255, 255);
+  background-color: #ffffff;
   text-align: center;
   margin-top: 30px;
   padding: 20px 20px;
@@ -282,7 +269,6 @@ ul.cd-hero-slider {
 .service-item:hover {
   opacity: 1;
   box-shadow: 0px 0px 5px #202628;
-  background-color: #eeeeee;
   -ms-transform: scale(1.02); /* IE 9 */
   -webkit-transform: scale(1.02); /* Safari 3-8 */
   transform: scale(1.03);
@@ -309,15 +295,6 @@ ul.cd-hero-slider {
   width: 90px;
   display: inline-block;
 }
-
-.second-service .icon {
-  background-image: url(../img/second-service-main.png);
-  height: 32px;
-  width: 22px;
-  display: inline-block;
-}
-
-
 
 .circular{
   height: 100px;
@@ -449,7 +426,7 @@ ul.cd-hero-slider {
   clip: rect(0px, 50px, 100px, 0px);
 }
 .circle .bar .progress, .dot span{
-  background: #a2cf8d;
+  background: #5c9d7d;
 }
 .circle .left .progress{
   z-index: 1;
@@ -509,7 +486,7 @@ ul.cd-hero-slider {
 
 #portfolio {
   text-align: center;
-  background: #dddddd;
+  background: #fdfdfd;
 }
 
 .projects-holder .mix {
@@ -558,13 +535,19 @@ ul.cd-hero-slider {
 
 .project-item .hover-effect {
   position: absolute;
-  background-color: #6d1010dc;
+  background-color: #20262885;
   width: 100%;
   top: 0;
   bottom: 0;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
+}
+
+.project-item .hover-effect p{
+  position: absolute;
+  transition: all 0.5s;
+  color: #fff;
 }
 
 /* comingSoon projects */
@@ -611,15 +594,15 @@ ul.cd-hero-slider {
   display: inline-block;
   width: 46px;
   height: 46px;
-  background-color: #fff;
+  background-color: #5c9d7d;
   line-height: 46px;
-  color: #a2cf8d;
+  color: #202628;
   border-radius: 50%;
   font-size: 18px;
 }
 
 .project-item .hover-effect i:hover {
-  background-color: #5c9d7d;
+  background-color: #202628;
   color: #fff;
   transition: all 0.5s;
 }
@@ -632,7 +615,7 @@ ul.cd-hero-slider {
 /* testimonials */
 
 #testimonials {
-  background-image: url(../img/blog-bg.png);
+  background:#dddddd;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -647,11 +630,11 @@ ul.cd-hero-slider {
 }
 
 #testimonials .section-heading .line-dec {
-  background-color: #6d1010;
+  background-color: #202628;
 }
 
 .testimonials {
-	background: #fff;
+	background: rgba(255, 255, 255, 0.404);
 	text-align: center;
 	padding: 30px 30px 50px;
 	margin: 0 15px 100px;
@@ -660,7 +643,7 @@ ul.cd-hero-slider {
 .testimonials:before,
 .testimonials:after {
 	content: "";
-	border-top: 40px solid #fff;
+	border-top: 40px solid  rgba(255, 255, 255, 0.404);
 	border-right: 125px solid transparent;
 	position: absolute;
 	bottom: -40px;
@@ -675,7 +658,7 @@ ul.cd-hero-slider {
 .testimonials .icon {
 	display: inline-block;
 	font-size: 80px;
-	color: #6d1010;
+	color: #5c9d7d;
 	margin-bottom: 20px;
 }
 .testimonials .description {
@@ -692,7 +675,7 @@ ul.cd-hero-slider {
 }
 .testimonials .pic {
 	display: inline-block;
-	border: 2px solid #6d1010;
+	border: 2px solid #5c9d7d;
 	border-radius: 50%;
 	overflow: hidden;
 	z-index: 1;
@@ -712,7 +695,7 @@ ul.cd-hero-slider {
 .testimonials .post {
 	display: block;
 	font-size: 14px;
-	color: #6d1010;
+	color: #454546;
 }
 .owl-theme .owl-controls {
 	margin-top: 0;
@@ -721,13 +704,13 @@ ul.cd-hero-slider {
 	width: 32px;
 	height: 10px;
 	background: rgb(0, 0, 0);
-	border: 2px solid #a2cf8d;
+	border: 2px solid #5c9d7d;
 	margin: 5px;
 	opacity: 1;
 }
 .owl-theme .owl-controls .owl-page.active span,
 .owl-theme .owl-controls.clickable .owl-page:hover span {
-	background: #a2cf8d;
+	background: #5c9d7d;
 	border-color: rgb(0, 0, 0);
 }
 
@@ -744,7 +727,7 @@ ul.cd-hero-slider {
 .projects-item .text-content {
   position: absolute;
   bottom: 0;
-  background-color: rgba(0, 0, 0, 0.719);
+  background-color: rgb(0, 0, 0);
   width: 100%;
   padding: 5px 20px;
 }
@@ -793,7 +776,7 @@ ul.cd-hero-slider {
   line-height: 44px;
   color: #fff;
   text-align: center;
-  background-color: #a2cf8d;
+  background-color: #5c9d7d;
 }
 
 .pop span:hover,
@@ -916,7 +899,7 @@ footer p {
 footer em {
   font-style: normal;
   font-weight: 700;
-  color: #a2cf8d;
+  color: #5c9d7d;
 }
 
 footer ul {
@@ -1200,6 +1183,10 @@ body.lb-disable-scrolling {
   .cd-hero .slide-caption h2 {
     font-size: 28px;
   }
+  /* #about .right-image img{
+    height: 200px;
+    width:200px;
+  } */
 }
 
 @media (max-width: 1015px) {
@@ -1209,8 +1196,8 @@ body.lb-disable-scrolling {
   .service-item {
     margin-bottom: 30px;
   }
-  #what-we-do .right-image {
-    margin-top: 60px;
+  .right-image {
+    margin-top: 50px;
   }
   #testimonials .pop {
     top: 15%;
@@ -1230,3 +1217,55 @@ body.lb-disable-scrolling {
     float: none;
   }
 }
+
+/* Skills-gauge */
+.gauge-container {
+  width: 150px;
+  height: 150px;
+  display: block;
+  float: left;
+  padding: 10px;
+  background-color: #222;
+  margin: 7px;
+  border-radius: 3px;
+  position: relative;
+}
+.gauge-container > .label {
+  position: absolute;
+  right: 0;
+  top: 0;
+  display: inline-block;
+  background: rgba(0,0,0,0.5);
+  font-family: monospace;
+  font-size: 0.8em;
+  padding: 5px 10px;
+}
+.gauge-container > .gauge .dial {
+  stroke: #334455;
+  stroke-width: 2;
+  fill: rgba(0,0,0,0);
+}
+.gauge-container > .gauge .value {
+  stroke: rgb(47, 227, 255);
+  stroke-width: 2;
+  fill: rgba(0,0,0,0);
+}
+.gauge-container > .gauge .value-text {
+  fill: rgb(47, 227, 255);
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+
+.gauge-container.seven > .gauge .dial {
+  stroke: transparent;
+  stroke-width: 5;
+  transform: scale(0.9,0.9) translate3d(5.5px, 5.5px, 0);
+  fill: rgba(148, 112, 57, 0.42);
+}
+.gauge-container.seven > .gauge .value {
+  stroke: #F8774B;
+  stroke-dasharray: none;
+  stroke-width: 5;
+}
+
