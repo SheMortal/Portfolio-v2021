@@ -957,7 +957,7 @@ ul.cd-hero-slider {
     margin-bottom: 30px;
 }
 
-#contact .icon {
+#contact .icon p {
     padding-left: 10px;
     font-size: 13px;
     color: #fff;
@@ -981,9 +981,9 @@ ul.cd-hero-slider {
 
 #contact button {
     display: inline-block;
-    background-color: #6d1010;
+    background-color: #5c9d7d;
+    color: #202628;
     padding: 12px 18px;
-    color: #fff;
     font-size: 11px;
     letter-spacing: 1px;
     font-weight: 500;
@@ -993,8 +993,7 @@ ul.cd-hero-slider {
 }
 
 #contact button:hover {
-    background-color: #5c9d7d;
-    color: #202628;
+    color: #ffffff;
     transition: all 0.3s;
 }
 
