@@ -23,7 +23,8 @@
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
 </head>
 
-<body>
+<body id="stop-scrolling">
+    <div class="preloader"></div>
     <div class="header">
         <div class="container">
             <nav class="navbar navbar-inverse" role="navigation">
@@ -45,7 +46,7 @@
                     <ul class="nav navbar-nav">
                         <li><a href="#" class="scroll-top">Home</a></li>
                         <li><a href="#" class="scroll-link" data-id="about">About</a></li>
-                        <li><a href="#" class="scroll-link" data-id="services">Skills</a></li>
+                        <li><a href="#" class="scroll-link" data-id="skills">Skills</a></li>
                         <li><a href="#" class="scroll-link" data-id="portfolio">Portfolio</a></li>
                         <li><a href="#" class="scroll-link" data-id="testimonials">Testimonials</a></li>
                         <li><a href="#" class="scroll-link" data-id="contact">Contact </a></li>
@@ -161,244 +162,276 @@
     </div>
 
     <!-- .services -->
-    <div id="services" class="page-section">
-        <div class="container-skills" id="skills">
-            <div class="skill-text-center">
-                <h3> SKILLS</h3>
-                <h5>Following are the skills I have acquired since starting my journey in web development.</h5>
+    <div class="container-skills" id="skills">
+        <div class="skill-text-center">
+            <div class="section-heading">
+                <h4>Skills</h4>
+                <div class="line-dec-s"></div>
             </div>
-            <div class="browser-content ">
-                <div id="html" class="skill-row">
-                    <p>
-                        <i class="f">
+            <h5>Following are the skills I have acquired since starting my journey in web development.</h5>
+        </div>
+        <div class="browser-content ">
+            <div id="html" class="skill-row">
+                <p>
+                    <i class="f">
                       <img src="https://img.icons8.com/color/35/000000/html-5.png" alt="html"/></i>
-                        <span class="heading">HTML</span>
-                    </p>
+                    <span class="heading">HTML</span>
+                </p>
 
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="css" class="skill-row">
-                    <p>
-                        <i class="fab t"><img src="https://img.icons8.com/color/35/000000/css3.png" alt="css"/></i>
-                        <span class="heading">CSS</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+            <div id="css" class="skill-row">
+                <p>
+                    <i class="fab t"><img src="https://img.icons8.com/color/35/000000/css3.png" alt="css"/></i>
+                    <span class="heading">CSS</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="javascript" class="skill-row">
-                    <p>
-                        <i class="fab "><img src="https://img.icons8.com/color/30/000000/javascript.png" alt="js"/></i>
-                        <span class="heading">JavaScript</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+            <div id="javascript" class="skill-row">
+                <p>
+                    <i class="fab "><img src="https://img.icons8.com/color/30/000000/javascript.png" alt="js"/></i>
+                    <span class="heading">JavaScript</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="git" class="skill-row">
-                    <p>
-                        <i class=" "><img src="https://img.icons8.com/fluent/30/26e07f/github.png" alt="git"/></i>
-                        <span classv="heading">GIT</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+            <div id="git" class="skill-row">
+                <p>
+                    <i class="img"><img src="https://img.icons8.com/fluent/30/26e07f/github.png" alt="git"/></i>
+                    <span class="heading">GIT</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="node" class="skill-row">
-                    <p>
-                        <i class="fab e"><img src="https://img.icons8.com/windows/32/26e07f/nodejs.png" alt="node"/></i>
-                        <span class="heading">NodeJS</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i clasNames="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+            <div id="weebly" class="skill-row">
+                <p>
+                    <i class="img"><img src="https://img.icons8.com/windows/32/4a90e2/weebly.png"/></i>
+                    <span class="heading">WEEBLY</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="react" class="skill-row">
-                    <p>
-                        <i class="fab f"><img src="https://img.icons8.com/plasticine/35/26e07f/react.png" alt="reac"/></i>
-                        <span class="heading">React</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+            <div id="PSQL" class="skill-row">
+                <p>
+                    <i class="img"><img src="https://img.icons8.com/color/24/4a90e2/postgreesql.png"/></i>
+                    <span class="heading">PSQL</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="python" class="skill-row">
-                    <p>
-                        <i class="fab "><img src="https://img.icons8.com/color/30/000000/python.png" alt="python"/></i>
-                        <span class="heading">Python</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+            <div id="node" class="skill-row">
+                <p>
+                    <i class="fab e"><img src="https://img.icons8.com/windows/32/26e07f/nodejs.png" alt="node"/></i>
+                    <span class="heading">NodeJS</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="vuejs" class="skill-row">
-                    <p>
-                        <i class="fab f"><img src="https://img.icons8.com/windows/32/26e07f/vuejs.png" alt="vue"/></i>
-                        <span class="heading">Vue.js</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+            <div id="react" class="skill-row">
+                <p>
+                    <i class="fab f"><img src="https://img.icons8.com/plasticine/35/26e07f/react.png" alt="reac"/></i>
+                    <span class="heading">React</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="mongodb" class="skill-row">
-                    <p>
-                        <img src="https://img.icons8.com/color/30/000000/mongodb.png" alt="mongodb" />
-                        <span class="heading">MongoDB</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
+            <div id="python" class="skill-row">
+                <p>
+                    <i class="fab "><img src="https://img.icons8.com/color/30/000000/python.png" alt="python"/></i>
+                    <span class="heading">Python</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
                 </div>
+            </div>
 
-                <div id="mysql" class="skill-row">
-                    <p>
-                        <i class="fab fa-mysql fa-2x">
+            <div id="vuejs" class="skill-row">
+                <p>
+                    <i class="fab f"><img src="https://img.icons8.com/windows/32/26e07f/vuejs.png" alt="vue"/></i>
+                    <span class="heading">Vue.js</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+            </div>
+
+            <div id="mongodb" class="skill-row">
+                <p>
+                    <img src="https://img.icons8.com/color/30/000000/mongodb.png" alt="mongodb" />
+                    <span class="heading">MongoDB</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+            </div>
+
+            <div id="mysql" class="skill-row">
+                <p>
+                    <i class="fab fa-mysql fa-2x">
                         <img src="https://img.icons8.com/ios-filled/30/000000/mysql.png" alt="sql"/>
                           </i>
-                        <span class="heading">MySQL</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                    </div>
-                </div>
+                    <span class="heading">MySQL</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
 
-                <div id="bootstrap" class="skill-row">
-                    <p>
-                        <i class="fab fa-mysql fa-2x">
+                </div>
+            </div>
+
+            <div id="bootstrap" class="skill-row">
+                <p>
+                    <i class="fab fa-mysql fa-2x">
                         <img src="https://img.icons8.com/color/30/000000/bootstrap.png" alt="bootsrap"/>                      </i>
-                        <span class="heading">Bootstrap</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                    <span class="heading">Bootstrap</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+            </div>
+
+            <div id="firebase" class="skill-row">
+                <p>
+                    <i class="">
+                        <img src="https://img.icons8.com/color/30/000000/firebase.png"alt="firebase"/>                     </i>
+                    <span class="heading">Firebase</span>
+                </p>
+                <div class="stars">
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star" aria-hidden="true"></i>
+                    <i class="fa fa-star-half-o" aria-hidden="true"></i>
+                    <i class="fa fa-star-o" aria-hidden="true"></i>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- education/hobbies -->
+    <div id="edu" class="page-section">
+        <div class="container">
+            <div class="row">
+                <div class="column">
+                    <div class="section-heading edu">
+                        <h4>Education</h4>
+                        <div class="line-dec"></div>
+                    </div>
+                    <div class="education">
+                        <p>Grade 12 Zisukhanyo High School, Cape Town</p>
+                        <p>Jan 2011- Dec 2015</p>
+                    </div>
+                    <div class="section-heading edu">
+                        <h4>Hobbies</h4>
+                        <div class="line-dec"></div>
+                        <div class="hobbies">
+                            <p><i class="fa fa-circle" aria-hidden="true"></i> Art</p>
+                            <p><i class="fa fa-circle" aria-hidden="true"></i> Music</p>
+                            <p><i class="fa fa-circle" aria-hidden="true"></i> Writing</p>
+                            <p><i class="fa fa-circle" aria-hidden="true"></i> Painting</p>
+                            <p><i class="fa fa-circle" aria-hidden="true"></i>Nature</p>
+                        </div>
                     </div>
                 </div>
-
-                <div id="firebase" class="skill-row">
-                    <p>
-                        <i class="">
-                        <img src="https://img.icons8.com/color/30/000000/firebase.png"alt="firebase"/>                     </i>
-                        <span class="heading">Firebase</span>
-                    </p>
-                    <div class="stars">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
-                        <i class="far fa-star"></i>
+                <div class="column">
+                    <div class="about-catergory">
+                        <div class="section-heading">
+                            <h6>Development</h6>
+                        </div>
+                        <p>Fascinated by the world of 1s and 0s, I actively use every oportunity I get to utilize my current programming skills, learn new technologies, gain valuable proffessional experience to build a career whilst having fun creating web
+                            applications.
+                        </p>
+                        <div class="section-heading">
+                            <h6>Photography</h6>
+                        </div>
+                        <p>Lead into photography as a hobby, I thought it would be fun to embrace that I enjoyed doing. With time, I learnt that there was a difference about taking a snapshot and a good fine art photograph. The combination of me, nature
+                            and the perfect lense and I get lost in the world of portraits.</p>
+                        <div class="section-heading">
+                            <h6>Art</h6>
+                        </div>
+                        <p>From an early age storytelling in all it's forms intrigued me. From the methods used to hook a reader, the use of allegory and the chosen language, all leave me wanting to read more. This struck an imagination in me swarming with
+                            words, née the artist...</p>
                     </div>
                 </div>
             </div>
@@ -426,28 +459,17 @@
                             <li class="filter" data-filter="art"><span>Artistry</span></li>
                         </ul>
                     </div>
-                    <div class="about-catergory mix photography">
-                        <p class=" mix developer">Fascinated by the world of 1s and 0s, I actively use every oportunity I get to utilize my current programming skills, learn new technologies, gain valuable proffessional experience to build a career whilst having fun creating web
-                            applications.
-                        </p>
-
-                        <p class="photography">Lead into photography as a hobby, I thought it would be fun to embrace that I enjoyed doing. With time, I learnt that there was a difference about taking a snapshot and a good fine art photograph. The combination of me, nature
-                            and the perfect lense and I get lost in the world of portraits.</p>
-
-                        <p class="art">From an early age storytelling in all it's forms intrigued me. From the methods used to hook a reader, the use of allegory and the chosen language, all leave me wanting to read more. This struck an imagination in me swarming with
-                            words, née the artist...</p>
-                    </div>
                     <div class="projects-holder">
                         <div class="row">
                             <!-- /01 -->
                             <div class="col-md-3 col-sm-6 project-item mix developer">
                                 <div class="projects-item">
                                     <div class="thumb">
-                                        <div class="image">
-                                            <img src="img/code.png">
+                                        <div class="image ghf">
+                                            <img src="img/githubFinder.jpeg">
                                         </div>
                                         <div class="hover-effect">
-                                            <p>Descr: Lorem ipsum dolor sit amet consectetur adipisicing elit.similique ut numquam, nesciunt maxime!</p>
+                                            <p>Descr: An app that searchs for a github user account!</p>
                                             <a href="https://githubfinder-sb.netlify.app/" target="_blank"><i class="fa fa-search"></i></a>
                                         </div>
                                         <div class="text-content">
@@ -462,11 +484,11 @@
                                 <div class="projects-item">
                                     <div class="thumb">
                                         <div class="image">
-                                            <img src="img/code.png">
+                                            <img src="img/it-logger.png">
                                         </div>
                                         <div class="hover-effect">
-                                            <p>Descr: Lorem ipsum dolor sit amet consectetur adipisicing elit.similique ut numquam, nesciunt maxime!</p>
-                                            <a href="https://github.com/SheMortal/IT-Logger" target="_blank"><i class="fa fa-search"></i></a>
+                                            <p>Descr: React app to track IT department tasks and issues. Uses JSON-Server as a mock backend!</p>
+                                            <a href="https://it-logger-sb.netlify.app/" target="_blank"><i class="fa fa-search"></i></a>
                                         </div>
                                         <div class="text-content">
                                             <h4>It-Logger</h4>
@@ -691,7 +713,7 @@
                             <p class="description">
                                 The best part about working with Sinothando is that she listen and is very receptive. She makes sure she takes the necessary time to understand exactly what it is that you're looking to create and implements it in the best way she knows how. It's always
                                 a learning curve to work with this young lady.
-                            </p><br>
+                            </p><br><br>
                             <div class="testimonials-content">
                                 <div class="pic"><img src="img/test-khazi.jpg" alt=""></div>
                                 <h3 class="title">Ntombekhazi Sibetyu </h3>
@@ -714,7 +736,7 @@
                             <p class="description">
                                 Sinothando has shown herself to be resourceful, creative and attentive. She is bright and diligent when it comes to her projects, and she has become a pillar of support for her peers. Her curious nature allows her to work well both alone and in groups,
                                 and she thrives in social environments.
-                            </p><br>
+                            </p><br><br>
                             <div class="testimonials-content">
                                 <div class="pic"><img src="img/test-jason.jpg" alt=""></div>
                                 <h3 class="title">Jason Wandrag</h3>
@@ -727,7 +749,7 @@
                                 Sinothando Bacela is a very harkworking person and tends to never give up when things get tough. She shows that she can be creative when it comes to work and tends to give it her all and is a very fun person to be around.
                             </p><br><br><br><br>
                             <div class="testimonials-content">
-                                <div class="pic"><img src="img/testimonials-img.jpg" alt=""></div>
+                                <div class="pic"><img src="img/test-doreen.jpg" alt=""></div>
                                 <h3 class="title">Doreen Ligman</h3>
                                 <span class="post">Web Developer</span>
                             </div>
@@ -739,7 +761,7 @@
                                 solutions.
                             </p><br><br>
                             <div class="testimonials-content">
-                                <div class="pic"><img src="img/test-chad.jpg" alt=""></div>
+                                <div class="pic"><img src="img/test-chad.png" alt=""></div>
                                 <h3 class="title">Chad Bosch</h3>
                                 <span class="post">LifeChoices Studio: Team Leader</span>
                             </div>
@@ -749,7 +771,7 @@
                             <p class="description">
                                 Sinothando is a very diligent individual who is devoted in her work. I have had the pleasure to work with her and enjoyed tackling every task I have worked on with her because of her inventive and enthusiastic nature. I believe she would be a great asset
                                 to any development team.
-                            </p><br>
+                            </p><br><br>
                             <div class="testimonials-content">
                                 <div class="pic"><img src="img/test-unathi.jpg" alt=""></div>
                                 <h3 class="title">Unathi Maqhula</h3>
@@ -783,7 +805,7 @@
                 </div>
                 <div class="col-md-6">
                     <div class="row">
-                        <form id="contact" action="" method="post">
+                        <form id="contact" action="https://formspree.io/f/xwkwzzrb" method="post">
                             <div class="col-md-6">
                                 <fieldset>
                                     <input name="name" type="text" class="form-control" id="name" placeholder="Name..." required="">
@@ -937,5 +959,7 @@
         }
     </script>
 </body>
+
+</html>
 
 </html>
